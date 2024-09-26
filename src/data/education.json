@@ -1,0 +1,14 @@
+{
+  "Educations": [
+    {
+      "name": "DST Informatique - Polytechnic School of Dakar ESP",
+      "periode": "oct 2022 - july 2024",
+      "description": "Algorithmic and Programming Architecture - System and Networks - Software Engineering Tools and Models - Mathematics - Economics - Expression and Communication - Organisation Management - English"
+    },
+    {
+      "name": "BAC S2 - Cours Secondaires Leopold Sedar Senghor CLSS",
+      "periode": "july 2022",
+      "description": "Mathematics - Physics and Chemistry - Biology  "
+    }
+  ]
+}
