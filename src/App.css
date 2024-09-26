@@ -1,3 +1,4 @@
+
 /* navbar styles */
 
 .navigator {
@@ -5,8 +6,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background-color: #f8f9fa;
+  padding: 20px;
+  background-color: #e8ebed;
   font-family: "Playwrite DE Grund", cursive;
   font-optical-sizing: auto;
   font-style: normal;
@@ -43,7 +44,7 @@
 
 .presention--title{
   font-size: 35px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .school--link{
@@ -65,9 +66,56 @@
   display: block;
   text-align: justify;
   line-height: 2.5;
+  padding: 20px;
 }
 
 .presentation--description .red{
   color: red;
 }
 /* presention styles */
+
+
+
+/* experience styles */
+
+.experience{
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  text-align: justify;
+}
+.experience .title{
+  font-size: 20px;
+  background-color: #e8ebed;
+}
+
+.element{
+  width: 50%;
+  
+}
+
+.experience .description{
+  font-size: 16px;
+}
+
+.experience .technologie{
+  border: 0.5px solid #7d8080be;
+  width: fit-content;
+  border-radius: 50%;
+  background-color: #e8ebed;
+}
+
+.technologie--container{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.experience .periode{
+  font-family: "Playwrite DE Grund", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 12px;
+}
+
+/* experience styles */
