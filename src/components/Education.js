@@ -11,7 +11,7 @@ export default function Education(){
     
     return (
         <main className="education">
-            <h1 className="title">Education</h1>
+            <h1 className="title">🎓 Education</h1>
              {educationData.map((educ)=>{
                 return (
                     <div>

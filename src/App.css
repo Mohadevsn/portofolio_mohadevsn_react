@@ -1,6 +1,4 @@
-
 /* navbar styles */
-
 .navigator {
   display: flex;
   flex-direction: row;
@@ -29,133 +27,172 @@
   color: #007bff;
 }
 
-/* navbar styles */
-
-
+/* Responsive adjustments for navbar */
+@media (max-width: 600px) {
+  .navigator {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align links to start */
+  }
+  
+  .navigator--link {
+    flex-direction: column; /* Stack links vertically */
+    gap: 10px; /* Reduced gap for smaller screens */
+  }
+}
 
 /* presention styles */
-
-.presentation--container{
+.presentation--container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 20px;
 }
 
-.presention--title{
+.presention--title {
   font-size: 35px;
   padding: 20px;
 }
 
-.school--link{
+.school--link {
   text-decoration: none;
 }
-.school--link:hover{
+
+.school--link:hover {
   color: #007bff;
 }
 
-.school--link:active{
+.school--link:active {
   text-decoration: none;
 }
 
-.profile--image{
-  height: 15%;
+.profile--image {
+  max-width: 45%;
+  max-height: 70%;
 }
 
-.presentation--description{
+.profile--me {
+  width: 100%;
+  height: 100%;
+}
+
+.presentation--description {
   display: block;
   text-align: justify;
-  line-height: 2.5;
+  line-height: 2;
   padding: 20px;
 }
 
-.presentation--description .red{
+.presentation--description .red {
   color: red;
 }
-/* presention styles */
 
-
+/* Responsive adjustments for presentation */
+@media (max-width: 600px) {
+  .presentation--container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements */
+  }
+  
+  .profile--image {
+    max-width: 100%; /* Full width for images */
+    max-height: auto; /* Maintain aspect ratio */
+  }
+  
+  .presention--title {
+    font-size: 28px; /* Smaller title on mobile */
+  }
+}
 
 /* education styles */
-
-.education{
+.education {
   display: flex;
   padding: 24px;
   flex-direction: column;
   text-align: justify;
 }
-.education .title{
+
+.education .title {
   font-size: 20px;
   background-color: #e8ebed;
 }
 
-.element{
+.element {
   width: 50%;
-  
 }
 
-.education .description{
+.education .description {
   font-size: 14px;
 }
 
-.education .technologie{
+.education .technologie {
   border: 0.5px solid #7d8080be;
   width: fit-content;
   border-radius: 50%;
   background-color: #e8ebed;
 }
 
-.education  .periode{
+.education .periode {
   font-family: "Playwrite DE Grund", cursive;
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 12px;
 }
 
-/* education styles */
+/* Responsive adjustments for education */
+@media (max-width: 600px) {
+  .element {
+    width: 100%; /* Full width on mobile */
+  }
 
-
+  .education .title {
+    font-size: 18px; /* Smaller title on mobile */
+  }
+}
 
 /* experience styles */
-
-.experience{
+.experience {
   display: flex;
   padding: 24px;
   flex-direction: column;
   text-align: justify;
 }
-.experience .title{
+
+.experience .title {
   font-size: 20px;
   background-color: #e8ebed;
 }
 
-.element{
-  width: 50%;
-  
-}
-
-.experience .description{
+.experience .description {
   font-size: 14px;
 }
 
-.experience .technologie{
+.experience .technologie {
   border: 0.5px solid #7d8080be;
   width: fit-content;
   border-radius: 50%;
   background-color: #e8ebed;
 }
 
-.technologie--container{
+.technologie--container {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
 
-.experience .periode{
+.experience .periode {
   font-family: "Playwrite DE Grund", cursive;
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 12px;
 }
 
-/* experience styles */
+/* Responsive adjustments for experience */
+@media (max-width: 600px) {
+  .experience .title {
+    font-size: 18px; /* Smaller title on mobile */
+  }
+
+  .technologie--container {
+    flex-direction: column; /* Stack technologies vertically */
+  }
+}

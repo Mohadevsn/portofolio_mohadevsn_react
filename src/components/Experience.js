@@ -10,7 +10,7 @@ export default function Experience(){
     
     return (
         <main className="experience">
-            <h1 className="title">Experiences</h1>
+            <h1 className="title">🏢 Experiences</h1>
              {
                 experiencesData.map((exp) => {
                     return(
