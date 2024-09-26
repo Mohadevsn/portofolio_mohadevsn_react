@@ -1,0 +1,73 @@
+/* navbar styles */
+
+.navigator {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  font-family: "Playwrite DE Grund", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.navigator--link {
+  display: flex;
+  flex-direction: row;
+  gap: 20px; /* Adds space between links */
+}
+
+.navigator--link a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+.navigator--link a:hover {
+  color: #007bff;
+}
+
+/* navbar styles */
+
+
+
+/* presention styles */
+
+.presentation--container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.presention--title{
+  font-size: 35px;
+  padding: 10px;
+}
+
+.school--link{
+  text-decoration: none;
+}
+.school--link:hover{
+  color: #007bff;
+}
+
+.school--link:active{
+  text-decoration: none;
+}
+
+.profile--image{
+  height: 15%;
+}
+
+.presentation--description{
+  display: block;
+  text-align: justify;
+  line-height: 2.5;
+}
+
+.presentation--description .red{
+  color: red;
+}
+/* presention styles */

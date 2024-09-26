@@ -1,11 +1,13 @@
 import logo from './logo.svg';
-import Header from './components/Header';
+import NavBar from './components/NavBar';
+import Presentation from './components/About';
 import './App.css';
 
 function App() {
   return (
     <div>
-      <Header/>
+      <NavBar/>
+      <Presentation/>
     </div>
   )
 }
