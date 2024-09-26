@@ -15,7 +15,7 @@ export default function Experience(){
                 experiencesData.map((exp) => {
                     return(
                         <div className="element">
-                            <p className="subtile">- {exp.name}</p>
+                            <p className="subtile">- <b>{exp.name}</b></p>
                             <p className="periode">{exp.periode}</p>
                             <div className="description">
                                 <p>{exp.description}</p>

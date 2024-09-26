@@ -16,7 +16,7 @@ export default function Education(){
                 return (
                     <div>
                     <div className="element">
-                            <p className="subtile">- {educ.name}</p>
+                            <p className="subtile">- <b>{educ.name}</b></p>
                             <p className="periode">{educ.periode}</p>
                             <div className="description">
                                 <p>{educ.description}</p>
