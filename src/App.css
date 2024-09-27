@@ -11,6 +11,10 @@
   font-style: normal;
 }
 
+.name{
+  justify-items: center;
+}
+
 .navigator--link {
   display: flex;
   flex-direction: row;
@@ -27,6 +31,10 @@
   color: #007bff;
 }
 
+.mohadevsnLogo{
+  width: 30%;
+}
+
 /* Responsive adjustments for navbar */
 @media (max-width: 600px) {
   .navigator {
@@ -37,6 +45,10 @@
   .navigator--link {
     flex-direction: column; /* Stack links vertically */
     gap: 10px; /* Reduced gap for smaller screens */
+  }
+
+  .mohadevsnLogo{
+    width: 100%;
   }
 }
 

@@ -4,7 +4,7 @@ export default function NavBar(){
     return(
        <nav className="navigator">
             <div className="name">
-                <h2>Mohamed WADE</h2>
+                <img src="./mohadevsn_logo.png" className="mohadevsnLogo" alt="logo MohaDevSn"/>
             </div>
             <div className="navigator--link">
                 <a href="#about">About</a>
