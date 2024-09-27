@@ -1,15 +1,23 @@
 import React from "react";
 
-export default function NavBar(){
+export default function NavBar(props){
+    const width = props.width
+    console.log(width)
+
+    let logoSize = "large"
+    if(width <= 600){
+        logoSize = "small"
+    }
+
     return(
        <nav className="navigator">
             <div className="name">
-                <img src="./mohadevsn_logo.png" className="mohadevsnLogo" alt="logo MohaDevSn"/>
+                { logoSize === "large" && <img src="./mohadevsn-logo-large.png" className="mohadevsnLogoLarge" alt="logo MohaDevSn"/>}
+                {logoSize === "small" && <img src="./mohadevsn-logo-small.png" className="mohadevsnLogoSmall" alt="logo MohaDevSn"/>}
             </div>
             <div className="navigator--link">
-                <a href="#about">About</a>
+                <a href="#skill">Skills</a>
                 <a href="#education">Education</a>
-                <a href="#experiences">Skills</a>
                 <a href="#experiences">Experiences</a>
                 <a href="#contact">Contact</a>
             </div>

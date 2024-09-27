@@ -1,0 +1,58 @@
+{
+  "Skills": [
+    {
+      "name": "Front End",
+      "tools": 
+      [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Astro Js",
+        "Flutter"
+      ]
+    },
+    {
+      "name": "BackEnd",
+      "tools":[
+        "PHP",
+        "Laravel",
+        "Spring Boot"
+      ]
+    },
+    {
+      "name":"Software Engineering ",
+      "tools":[
+        "Python 🐍",
+        "C",
+        "Java ♨️",
+        "Dart"
+      ]
+    },
+    {
+      "name": "Operating Systems",
+      "tools":[
+        "MacOs ",
+        "Linux 🐧",
+        "Windows 🪟"
+      ]
+    },
+    {
+      "name": "Network Management",
+      "tools":[
+        "Apache 2",
+        "Cisco",
+        "MySql",
+        "SSH",
+        "FTP"
+      ]
+    },
+    {
+      "name": "Colaboration Tools",
+      "tools":[
+        "Git",
+        "Figma"
+      ]
+    }
+  ]
+}

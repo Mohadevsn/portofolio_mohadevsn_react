@@ -1,5 +1,14 @@
+body{
+  margin: 0;
+  padding: 0;
+}
 /* navbar styles */
 .navigator {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: #333 inset;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -9,6 +18,8 @@
   font-family: "Playwrite DE Grund", cursive;
   font-optical-sizing: auto;
   font-style: normal;
+  box-shadow: 0px 6px 5px 0px rgba(161,161,161,1);
+
 }
 
 .name{
@@ -19,6 +30,7 @@
   display: flex;
   flex-direction: row;
   gap: 20px; /* Adds space between links */
+  margin-right: 5%;
 }
 
 .navigator--link a {
@@ -31,29 +43,22 @@
   color: #007bff;
 }
 
-.mohadevsnLogo{
+.mohadevsnLogoLarge{
   width: 180px;
 }
 
 /* Responsive adjustments for navbar */
 @media (max-width: 600px) {
-  .navigator {
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align links to start */
-  }
-  
-  .navigator--link {
-    flex-direction: column; /* Stack links vertically */
-    gap: 10px; /* Reduced gap for smaller screens */
-  }
+    
   .navigator--link a {
     text-decoration: none;
     color: #333;
-    font-size: 14px;
+    font-size: 10px;
+    padding-right: 5px;
   }
 
-  .mohadevsnLogo{
-    width: 100%;
+  .mohadevsnLogoSmall{
+    width: 50px;
   }
 }
 
@@ -63,6 +68,14 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 20px;
+  margin-top: 8%;
+}
+
+.roleTitle{
+  font-size: 28px;
+  font-family: "Playwrite DE Grund", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .presention--title {
@@ -106,6 +119,7 @@
 /* Responsive adjustments for presentation */
 @media (max-width: 600px) {
   .presentation--container {
+    margin: 10%;
     flex-direction: column; /* Stack elements vertically */
     align-items: center; /* Center elements */
   }
@@ -185,15 +199,16 @@
 
 .experience .technologie {
   border: 0.5px solid #7d8080be;
-  width: fit-content;
-  border-radius: 50%;
+  width: 100%;
+  text-align: center;
+  border-radius: 30px;
   background-color: #e8ebed;
 }
 
 .technologie--container {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust based on your preference */
+  gap: 10px; /* Space between grid items */
 }
 
 .experience .periode {
@@ -210,6 +225,67 @@
   }
 
   .technologie--container {
-    flex-direction: column; /* Stack technologies vertically */
+    display: grid;
+    grid-template-rows: 1fr 1fr; /* Stack technologies by grid */
   }
 }
+
+/* Skills style */
+
+.skill {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.skill .title {
+  font-size: 20px;
+  background-color: #e8ebed;
+}
+
+.skill .description {
+  font-size: 14px;
+}
+
+.skill .tools {
+  border: 0.5px solid #7d8080be;
+  width: 100%;
+  text-align: center;
+  border-radius: 30px;
+  background-color: #e8ebed;
+}
+
+.tools--container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust based on your preference */
+  gap: 10px; /* Space between grid items */
+}
+
+.tools {
+  background-color: #f0f0f0; /* Optional: visual background for the tools */
+  padding: 5px; /* Optional: padding for each tool */
+  border-radius: 5px; /* Optional: rounded corners */
+  text-align: center; /* Optional: center the text */
+}
+
+/* Responsive adjustments for experience */
+@media (max-width: 600px) {
+  .skill .title {
+    font-size: 18px; /* Smaller title on mobile */
+  }
+
+  .tools--container {
+    display: grid;
+    grid-template-rows: 1fr 1fr; /* Stack technologies by grid */
+  }
+  .skill .tools {
+    border: 0.5px solid #7d8080be;
+    width: 50%;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #e8ebed;
+    padding: 5px;
+  }
+}
+

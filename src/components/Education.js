@@ -7,7 +7,6 @@ export default function Education(){
     // information come from education.json
 
     const educationData = Educations.Educations 
-    console.log(educationData)
     
     return (
         <main className="education">
@@ -15,7 +14,7 @@ export default function Education(){
              {educationData.map((educ)=>{
                 return (
                     <div>
-                    <div className="element">
+                    <div id="education" className="element">
                             <p className="subtile">- <b>{educ.name}</b></p>
                             <p className="periode">{educ.periode}</p>
                             <div className="description">
