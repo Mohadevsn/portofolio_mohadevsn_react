@@ -49,6 +49,11 @@ body{
 
 /* Responsive adjustments for navbar */
 @media (max-width: 600px) {
+
+  .navigator--link{
+  margin-right: 8%;
+
+  }
     
   .navigator--link a {
     text-decoration: none;

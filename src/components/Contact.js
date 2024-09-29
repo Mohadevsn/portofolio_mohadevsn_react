@@ -8,7 +8,7 @@ export default function Contact(){
     return (
         <main className="contact">
             <h1 className="title">📭 -Let’s Connect!</h1>
-                        <div>
+                        <div id="contact">
                         <div id="education" className="element">
                                 <p className="description">
                                     I look forward to hearing from you!
