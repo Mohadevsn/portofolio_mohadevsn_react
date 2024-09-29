@@ -3,6 +3,8 @@ import Presentation from './components/About';
 import Experience from './components/Experience';
 import Education from './components/Education';
 import Skill from './components/Skill';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 import React from 'react';
 
 import './App.css';
@@ -31,6 +33,8 @@ function App() {
       <Skill/>
       <Education/>
       <Experience/>
+      <Contact/>
+      <Footer/>
     </div>
   )
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function NavBar(props){
     const width = props.width
-    console.log(width)
+
 
     let logoSize = "large"
     if(width <= 600){

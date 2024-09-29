@@ -1,0 +1,18 @@
+{
+  "Contacts": [
+    {
+      "type": "Email",
+      "content": "mohawade23@gmail.com"
+    },
+    {
+      "type": "GitHub",
+      "content": "Mohadevsn",
+      "link": "https://github.com/Mohadevsn"
+    },
+    {
+      "type": "Linkdin",
+      "content": "Mohamed Wade",
+      "link": "https://www.linkedin.com/in/mohamed-wade-5998992a0/"
+    }
+  ]
+}
