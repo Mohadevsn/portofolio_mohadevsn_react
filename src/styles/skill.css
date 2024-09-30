@@ -1,0 +1,62 @@
+
+
+/* Skills style */
+
+.skill {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    text-align: justify;
+    margin-top: 50px;
+  }
+  
+  .skill .title {
+    font-size: 20px;
+    background-color: #e8ebed;
+  }
+  
+  .skill .description {
+    font-size: 14px;
+  }
+  
+  .skill .tools {
+    border: 0.5px solid #7d8080be;
+    width: 100%;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #e8ebed;
+  }
+  
+  .tools--container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust based on your preference */
+    gap: 10px; /* Space between grid items */
+  }
+  
+  .tools {
+    background-color: #f0f0f0; /* Optional: visual background for the tools */
+    padding: 5px; /* Optional: padding for each tool */
+    border-radius: 5px; /* Optional: rounded corners */
+    text-align: center; /* Optional: center the text */
+  }
+  
+  /* Responsive adjustments for experience */
+  @media (max-width: 600px) {
+    .skill .title {
+      font-size: 18px; /* Smaller title on mobile */
+    }
+  
+    .tools--container {
+      display: grid;
+      grid-template-rows: 1fr 1fr; /* Stack technologies by grid */
+    }
+    .skill .tools {
+      border: 0.5px solid #7d8080be;
+      width: 50%;
+      text-align: center;
+      border-radius: 30px;
+      background-color: #e8ebed;
+      padding: 5px;
+    }
+  }
+  

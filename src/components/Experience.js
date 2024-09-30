@@ -1,5 +1,6 @@
 import React from "react";
 import Experiences from "../data/experiences.json"
+import '../styles/experience.css'
 
 export default function Experience(){
 

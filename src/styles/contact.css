@@ -1,0 +1,43 @@
+
+
+/* contact styles */
+
+.contact{
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    text-align: justify;
+    margin-top: 50px;
+  }
+  
+  .contact .title {
+    font-size: 20px;
+    background-color: #e8ebed;
+  }
+  
+  .contact .description{
+    font-size: 16px;
+    line-height: 2;
+  }
+  
+  .contact .contactSection{
+    background-color: #b1adad;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px 10px; 
+    
+  }
+  
+  .githubLink{
+    text-decoration: none;
+    color: black;
+  }
+  
+  .linkdinLink{
+    text-decoration: none;
+    color: black;
+  }
+  
+  
+  
+  /* contact styles */

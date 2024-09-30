@@ -1,5 +1,6 @@
 import React from "react";
 import Educations from "../data/education.json"
+import '../styles/education.css'
 
 export default function Education(){
 

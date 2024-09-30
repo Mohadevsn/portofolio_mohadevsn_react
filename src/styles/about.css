@@ -1,0 +1,79 @@
+
+/* presention styles */
+.presentation--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 8%;
+  }
+  
+  .roleTitle{
+    font-size: 28px;
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  
+  .presention--title {
+    font-size: 35px;
+    padding: 20px;
+  }
+  
+  .school--link {
+    text-decoration: none;
+  }
+  
+  .school--link:hover {
+    color: #007bff;
+  }
+  
+  .school--link:active {
+    text-decoration: none;
+  }
+  
+  .profile--image {
+    max-width: 45%;
+    max-height: 70%;
+  }
+  
+  .profile--me {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .presentation--description {
+    display: block;
+    text-align: justify;
+    line-height: 2;
+    padding: 20px;
+  }
+  
+  .presentation--description .red {
+    color: red;
+  }
+  
+  /* Responsive adjustments for presentation */
+  @media (max-width: 600px) {
+  
+    .presention--title {
+      font-size: 25px;
+      padding: 20px;
+    }
+    
+    .presentation--container {
+      margin: 15% 15px;
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center elements */
+    }
+    
+    .profile--image {
+      max-width: 100%; /* Full width for images */
+      max-height: auto; /* Maintain aspect ratio */
+    }
+    
+    .presention--title {
+      font-size: 28px; /* Smaller title on mobile */
+    }
+  }
+  

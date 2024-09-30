@@ -1,0 +1,12 @@
+
+/* footer styles */
+
+.footer{
+    display: flex;
+    margin-bottom: 0;
+    width: 100%;
+    background-color: #e8ebed;
+    justify-content: center;
+  }
+  
+  /* footer styles */

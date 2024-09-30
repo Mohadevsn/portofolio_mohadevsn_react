@@ -1,0 +1,51 @@
+
+
+/* experience styles */
+.experience {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    text-align: justify;
+  }
+  
+  .experience .title {
+    font-size: 20px;
+    background-color: #e8ebed;
+  }
+  
+  .experience .description {
+    font-size: 14px;
+  }
+  
+  .experience .technologie {
+    border: 0.5px solid #7d8080be;
+    width: 100%;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #e8ebed;
+  }
+  
+  .technologie--container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust based on your preference */
+    gap: 10px; /* Space between grid items */
+  }
+  
+  .experience .periode {
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 12px;
+  }
+  
+  /* Responsive adjustments for experience */
+  @media (max-width: 600px) {
+    .experience .title {
+      font-size: 18px; /* Smaller title on mobile */
+    }
+  
+    .technologie--container {
+      display: grid;
+      grid-template-rows: 1fr 1fr; /* Stack technologies by grid */
+    }
+  }
