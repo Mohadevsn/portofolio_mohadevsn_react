@@ -6,6 +6,7 @@ import Skill from './components/Skill';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import React from 'react';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 import './App.css';
 
