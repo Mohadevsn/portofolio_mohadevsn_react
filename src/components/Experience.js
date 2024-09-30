@@ -2,7 +2,7 @@ import React from "react";
 import Experiences from "../data/experiences.json"
 import '../styles/experience.css'
 
-export default function Experience(){
+export default function Experience(props){
 
     // trying to not hard code the experience here
     // information come from experience.json
@@ -10,8 +10,8 @@ export default function Experience(){
     const experiencesData = Experiences.Experiences 
     
     return (
-        <main className="experience">
-            <h1 className="title">🏢 Experiences</h1>
+        <main className={props.darkMode ? "experience dark" : "experience"}>
+            <h1 className={props.darkMode ? "title dark" : "title"}>🏢 Experiences</h1>
              {
                 experiencesData.map((exp) => {
                     return(
@@ -24,7 +24,7 @@ export default function Experience(){
                             <div className="technologie--container">
                                 {exp.technologie.map((tech, techIndex)=>{
                                     return (
-                                        <p key={techIndex} className="technologie">{tech}</p>
+                                        <p key={techIndex} className={props.darkMode ? "technologie dark": "technologie"}>{tech}</p>
                                 )
                                 })}
                             </div>

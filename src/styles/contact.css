@@ -41,3 +41,34 @@
   
   
   /* contact styles */
+
+  /* contact dark styles */
+
+  .contact.dark {
+    background-color: black;
+  }
+
+  .contact .title.dark {
+    font-size: 20px;
+    background-color: #2a2a2a;
+  }
+  
+  .contact .contactSection.dark{
+    background-color: #2a2a2a;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px 10px; 
+    
+  }
+  
+  .githubLink{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .linkdinLink{
+    text-decoration: none;
+    color: white;
+  }
+
+  /* contact dark styles */
