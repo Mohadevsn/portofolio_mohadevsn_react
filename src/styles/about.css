@@ -77,3 +77,13 @@
     }
   }
   
+  /* presentation style */
+
+  /* dark presentation styles */
+
+  .presentation--container.dark {
+    color: white;
+    background-color: black;
+  }
+
+  /* dark presentation styles */

@@ -1,9 +1,10 @@
 import React from "react";
 import '../styles/about.css'
 
-export default function About(){
+export default function About(props){
+
     return (
-        <main className="presentation--container" id="about">
+        <main className={props.darkMode ? "presentation--container dark" : "presentation--container"} id="about">
             <div>
                 <p className="presention--title">
                     Hello I'm Mohamed WADE <br/> <span className="roleTitle">Computer Science Student & Tech Enthusiast </span>

@@ -1,5 +1,5 @@
 import NavBar from './components/NavBar';
-import Presentation from './components/About';
+import About from './components/About';
 import Experience from './components/Experience';
 import Education from './components/Education';
 import Skill from './components/Skill';
@@ -39,23 +39,29 @@ function App() {
         darkMode={darkMode}
         toggleDarkMode={toggleDarkMode}
       />
-      <Presentation
-      
+      <About
+        darkMode={darkMode}
+
       />
       <Skill
-      
+        darkMode={darkMode}
+
       />
       <Education
-      
+        darkMode={darkMode}
+
       />
       <Experience
-      
+        darkMode={darkMode}
+
       />
       <Contact
-      
+        darkMode={darkMode}
+
       />
       <Footer
-      
+        darkMode={darkMode}
+
       />
     </div>
   )
