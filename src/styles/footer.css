@@ -10,3 +10,11 @@
   }
   
   /* footer styles */
+
+  /* footer dark styles */
+  .footer.dark{
+    color: white;
+    background-color: #2a2a2a;
+
+  }
+  /* footer dark styles */

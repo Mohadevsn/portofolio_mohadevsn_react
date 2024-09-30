@@ -2,7 +2,7 @@ import React from "react";
 import Educations from "../data/education.json"
 import '../styles/education.css'
 
-export default function Education(){
+export default function Education(props){
 
     // trying to not hard code the education here
     // information come from education.json
@@ -10,8 +10,8 @@ export default function Education(){
     const educationData = Educations.Educations 
     
     return (
-        <main className="education">
-            <h1 className="title">🎓 Education</h1>
+        <main className={props.darkMode ? "education dark": "education"}>
+            <h1 className={props.darkMode ?"title dark": "title"}>🎓 Education</h1>
              {educationData.map((educ)=>{
                 return (
                     <div>
