@@ -33,7 +33,7 @@ function App() {
 
 
   return (
-    <div>
+    <div className={darkMode? "mainDiv dark" : "mainDiv"}>
       <NavBar 
         width={windowWidth}
         darkMode={darkMode}

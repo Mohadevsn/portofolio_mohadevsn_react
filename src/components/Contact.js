@@ -3,9 +3,6 @@ import '../styles/contact.css'
 
 export default function Contact(){
 
-
-
-
     return (
         <main className="contact">
             <h1 className="title">📭 -Let’s Connect!</h1>

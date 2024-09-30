@@ -8,8 +8,6 @@ export default function About(props){
             <div>
                 <p className="presention--title">
                     Hello I'm Mohamed WADE <br/> <span className="roleTitle">Computer Science Student & Tech Enthusiast </span>
-                    <a href="https://esp.sn/" target="blank" className="school--link"><br/>
-                    <b> Polytechnic School of Dakar ESP</b></a>
                 </p>
                 <p className="presentation--description">
                 I am a passionate Computer Science Student at <a href="https://esp.sn/" target="blank" className="school--link"><br/>
