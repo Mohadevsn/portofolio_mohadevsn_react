@@ -48,16 +48,9 @@
   
     .tools--container {
       display: grid;
-      grid-template-rows: 1fr 1fr; /* Stack technologies by grid */
+      /* grid-template-rows: 1fr 1fr; Stack technologies by grid */
     }
-    .skill .tools {
-      border: 0.5px solid #7d8080be;
-      width: 50%;
-      text-align: center;
-      border-radius: 30px;
-      background-color: #e8ebed;
-      padding: 5px;
-    }
+    
   }
   /* Skills style  */
 

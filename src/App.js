@@ -15,7 +15,6 @@ function App() {
 
   function toggleDarkMode(){
     setDarkMode(prevDarkMode => !prevDarkMode)
-    console.log(darkMode)
   }
 
   React.useEffect(() => {
