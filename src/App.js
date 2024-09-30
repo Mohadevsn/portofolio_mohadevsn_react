@@ -1,5 +1,5 @@
 import NavBar from './components/NavBar';
-import Presentation from './components/About';
+import About from './components/About';
 import Experience from './components/Experience';
 import Education from './components/Education';
 import Skill from './components/Skill';
@@ -11,6 +11,12 @@ import './App.css';
 
 function App() {
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth)
+  const [darkMode, setDarkMode] = React.useState(false)
+
+  function toggleDarkMode(){
+    setDarkMode(prevDarkMode => !prevDarkMode)
+    console.log(darkMode)
+  }
 
   React.useEffect(() => {
     const handleResize = () => {
@@ -27,14 +33,36 @@ function App() {
 
 
   return (
-    <div>
-      <NavBar width={windowWidth}/>
-      <Presentation/>
-      <Skill/>
-      <Education/>
-      <Experience/>
-      <Contact/>
-      <Footer/>
+    <div className={darkMode? "mainDiv dark" : "mainDiv"}>
+      <NavBar 
+        width={windowWidth}
+        darkMode={darkMode}
+        toggleDarkMode={toggleDarkMode}
+      />
+      <About
+        darkMode={darkMode}
+
+      />
+      <Skill
+        darkMode={darkMode}
+
+      />
+      <Education
+        darkMode={darkMode}
+
+      />
+      <Experience
+        darkMode={darkMode}
+
+      />
+      <Contact
+        darkMode={darkMode}
+
+      />
+      <Footer
+        darkMode={darkMode}
+
+      />
     </div>
   )
 }

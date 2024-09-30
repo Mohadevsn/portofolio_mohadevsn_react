@@ -2,3 +2,13 @@ body{
   margin: 0;
   padding: 0;
 }
+
+.mainDiv{
+  color: black;
+  background-color: white;
+}
+
+.mainDiv.dark{
+  color: white;
+  background-color: black;
+}

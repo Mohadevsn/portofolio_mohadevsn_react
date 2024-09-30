@@ -59,4 +59,23 @@
       padding: 5px;
     }
   }
-  
+  /* Skills style  */
+
+  /* Skills dark style */
+  .skill.dark {
+    background-color: black;
+  }
+
+  .skill .title.dark {
+    font-size: 20px;
+    background-color: #2a2a2a;
+  }
+  .skill .tools.dark {
+    border: 0.5px solid #7d8080be;
+    width: 100%;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #2a2a2a;
+  }
+
+  /* Skills dark style */
