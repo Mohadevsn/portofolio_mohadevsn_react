@@ -10,8 +10,9 @@ export default function NavBar(props){
         logoSize = "small"
     }
 
+
     return(
-       <nav className={darkMode ? "navigator dark" : "navigator "}>
+       <nav className={darkMode ? "navigator dark" : "navigator "} id="navigator">
             <a href="#about">
                 <div className="name">
                     { (logoSize === "large" && !darkMode) && <img src="./mohadevsn-logo-large.png" className="mohadevsnLogoLarge" alt="logo MohaDevSn"/>}

@@ -12,10 +12,25 @@ import './App.css';
 
 function App() {
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth)
-  const [darkMode, setDarkMode] = React.useState(false)
+  const [darkMode, setDarkMode] = React.useState(window.matchMedia('(prefers-color-scheme: dark)').matches)
 
-  function toggleDarkMode(){
-    setDarkMode(prevDarkMode => !prevDarkMode)
+  
+  if (darkMode) {
+    document.body.style.backgroundColor = "black";
+  } else {
+    document.body.style.backgroundColor = "white";
+  }
+  
+  function toggleDarkMode() {
+    setDarkMode(prevDarkMode => {
+      const newDarkMode = !prevDarkMode;
+      if (newDarkMode) {
+        document.body.style.backgroundColor = "black";
+      } else {
+        document.body.style.backgroundColor = "white";
+      }
+      return newDarkMode;
+    });
   }
 
   React.useEffect(() => {
@@ -30,6 +45,19 @@ function App() {
       window.removeEventListener('resize', handleResize);
     };
   }, []); // 
+
+  React.useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleChange = (e) => {
+      setDarkMode(e.matches);
+    };
+
+    mediaQuery.addEventListener('change', handleChange);
+
+    return () => {
+      mediaQuery.removeEventListener('change', handleChange);
+    };
+  }, []);
 
 
   return (
