@@ -11,6 +11,12 @@ import './App.css';
 
 function App() {
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth)
+  const [darkMode, setDarkMode] = React.useState(false)
+
+  function toggleDarkMode(){
+    setDarkMode(prevDarkMode => !prevDarkMode)
+    console.log(darkMode)
+  }
 
   React.useEffect(() => {
     const handleResize = () => {
@@ -28,13 +34,29 @@ function App() {
 
   return (
     <div>
-      <NavBar width={windowWidth}/>
-      <Presentation/>
-      <Skill/>
-      <Education/>
-      <Experience/>
-      <Contact/>
-      <Footer/>
+      <NavBar 
+        width={windowWidth}
+        darkMode={darkMode}
+        toggleDarkMode={toggleDarkMode}
+      />
+      <Presentation
+      
+      />
+      <Skill
+      
+      />
+      <Education
+      
+      />
+      <Experience
+      
+      />
+      <Contact
+      
+      />
+      <Footer
+      
+      />
     </div>
   )
 }
