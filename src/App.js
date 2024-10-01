@@ -11,16 +11,19 @@ import { SpeedInsights } from "@vercel/speed-insights/react"
 import './App.css';
 
 function App() {
+
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth)
+  // initialize the theme to match the color scheme of the browser or device
   const [darkMode, setDarkMode] = React.useState(window.matchMedia('(prefers-color-scheme: dark)').matches)
 
-  
+
   if (darkMode) {
     document.body.style.backgroundColor = "black";
   } else {
     document.body.style.backgroundColor = "white";
   }
   
+  // toggle function
   function toggleDarkMode() {
     setDarkMode(prevDarkMode => {
       const newDarkMode = !prevDarkMode;
@@ -32,6 +35,8 @@ function App() {
       return newDarkMode;
     });
   }
+
+  // listenning for windows resizing
 
   React.useEffect(() => {
     const handleResize = () => {
@@ -45,6 +50,8 @@ function App() {
       window.removeEventListener('resize', handleResize);
     };
   }, []); // 
+
+  //  listenning for theme preference change
 
   React.useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
@@ -61,7 +68,8 @@ function App() {
 
 
   return (
-    <div className={darkMode? "mainDiv dark" : "mainDiv"}>
+    <div className={darkMode? "mainDiv dark" : "mainDiv"} id='scafold'>
+
       <NavBar 
         width={windowWidth}
         darkMode={darkMode}
@@ -91,6 +99,7 @@ function App() {
         darkMode={darkMode}
 
       />
+      <SpeedInsights/>
     </div>
   )
 }

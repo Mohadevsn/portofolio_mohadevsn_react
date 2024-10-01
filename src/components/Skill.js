@@ -9,9 +9,9 @@ export default function Skill(props){
         return (
             <main className={props.darkMode ?"skill dark" : "skill"} id="skill">
                 <h1 className={props.darkMode? "title dark" : "title"}>🥷🏾 Skills</h1>
-             {data.map((skill)=>{
+             {data.map((skill, skillKey)=>{
                 return (
-                <div >
+                <div key={skillKey}>
                     <div className="element">
                         <p className="subtile">- <b>{skill.name}</b></p>
                         <div className="tools--container dark">

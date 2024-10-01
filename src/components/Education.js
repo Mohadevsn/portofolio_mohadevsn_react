@@ -12,10 +12,10 @@ export default function Education(props){
     return (
         <main className={props.darkMode ? "education dark": "education"}>
             <h1 className={props.darkMode ?"title dark": "title"}>🎓 Education</h1>
-             {educationData.map((educ)=>{
+             {educationData.map((educ, eduKey)=>{
                 return (
-                    <div>
-                    <div id="education" className="element">
+                    <div key={eduKey}>
+                    <div id="education" className="element" >
                             <p className="subtile">- <b>{educ.name}</b></p>
                             <p className="periode">{educ.periode}</p>
                             <div className="description">

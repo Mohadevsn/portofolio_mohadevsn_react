@@ -13,9 +13,9 @@ export default function Experience(props){
         <main className={props.darkMode ? "experience dark" : "experience"}>
             <h1 className={props.darkMode ? "title dark" : "title"}>🏢 Experiences</h1>
              {
-                experiencesData.map((exp) => {
+                experiencesData.map((exp, expKey) => {
                     return(
-                        <div id="experiences" className="element">
+                        <div id="experiences" className="element" key={expKey}>
                             <p className="subtile">- <b>{exp.name}</b></p>
                             <p className="periode">{exp.periode}</p>
                             <div className="description">
