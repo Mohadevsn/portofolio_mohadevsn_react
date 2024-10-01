@@ -11,7 +11,7 @@ export default function Hobbies(props){
 
     
     return (
-        <main className={props.darkMode ? "hobby dark": "hobby"}>
+        <main className={props.darkMode ? "hobby dark": "hobby"} id="hobby">
             <h1 className={props.darkMode ?"title dark": "title"}>🎓 Hobbies</h1>
              {hobbiesData.map((hobb, hobbKey)=>{
                 return (

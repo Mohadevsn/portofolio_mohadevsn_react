@@ -92,12 +92,12 @@ function App() {
         darkMode={darkMode}
 
       />
+      <Hobbies
+        darkMode={darkMode}
+      />
       <Contact
         darkMode={darkMode}
 
-      />
-      <Hobbies
-        darkMode={darkMode}
       />
       <Footer
         darkMode={darkMode}

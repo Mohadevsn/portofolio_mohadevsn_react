@@ -60,6 +60,42 @@
   .toggleModeIcon:hover{
     cursor: pointer;
   }
+
+  .hamburgerIcon {
+    width: 30px;
+    cursor: pointer;
+    padding: 35px
+}
+
+.hamburger-links {
+    display: flex;
+    flex-direction: column;
+    background-color: #e8ebed;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 40%;
+    padding: 10px;
+}
+
+.hamburger-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.hamburger-links.dark {
+    background-color: #2a2a2a;
+}
+
+.hamburger-links.dark a {
+    color: white;
+}
+
+.hamburger-links a:hover {
+    color: #007bff;
+}
   
   /* Responsive adjustments for navbar */
   @media (max-width: 600px) {
@@ -86,8 +122,20 @@
     }
   
     .toggleModeIcon{
-      width: 15px;
+      width: 30px;
     }
+    /* Hide default links and use hamburger */
+    .navigator--link {
+      display: none;
+  }
+
+  .hamburger-menu {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-right: 10px;
+  }
+  
   }
 /* light navbar styles */
 
