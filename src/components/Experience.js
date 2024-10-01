@@ -10,12 +10,12 @@ export default function Experience(props){
     const experiencesData = Experiences.Experiences 
     
     return (
-        <main className={props.darkMode ? "experience dark" : "experience"}>
+        <main className={props.darkMode ? "experience dark" : "experience"} id="experiences">
             <h1 className={props.darkMode ? "title dark" : "title"}>🏢 Experiences</h1>
              {
                 experiencesData.map((exp, expKey) => {
                     return(
-                        <div id="experiences" className="element" key={expKey}>
+                        <div  className="element" key={expKey}>
                             <p className="subtile">- <b>{exp.name}</b></p>
                             <p className="periode">{exp.periode}</p>
                             <div className="description">

@@ -1,0 +1,47 @@
+
+
+/* hobby styles */
+.hobby {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    text-align: justify;
+  }
+  
+  .hobby .title {
+    font-size: 20px;
+    background-color: #e8ebed;
+  }
+  
+  .element {
+    width: 50%;
+  }
+  
+  .hobby .description {
+    font-size: 14px;
+  }
+  
+  
+  /* Responsive adjustments for hobby */
+  @media (max-width: 600px) {
+    .element {
+      width: 100%; /* Full width on mobile */
+    }
+  
+    .hobby .title {
+      font-size: 18px; /* Smaller title on mobile */
+    }
+  }
+/* hobby styles */
+
+/* hobby dark style */
+.hobby.dark {
+  background-color: black;
+}
+
+.hobby .title.dark {
+  font-size: 20px;
+  background-color: #2a2a2a;
+}
+
+/* hobby dark style */

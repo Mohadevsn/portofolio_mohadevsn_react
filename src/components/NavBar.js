@@ -21,7 +21,7 @@ export default function NavBar(props){
             } else {
                 setVisible(false);
             }
-            setPrevScroll(currentScroll);
+            setPrevScroll(currentScroll); 
         };
 
         window.addEventListener("scroll", handleChange)
@@ -40,7 +40,7 @@ export default function NavBar(props){
                 </div>
             </a>
             <div className={darkMode ? "navigator--link dark" : "navigator--link"}>
-                <a href="#skill">Skills</a>
+                <a href="#skill">Skills </a>
                 <a href="#education">Education</a>
                 <a href="#experiences">Experiences</a>
                 <a href="#contact">Contact</a>

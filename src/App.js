@@ -9,6 +9,7 @@ import React from 'react';
 import { SpeedInsights } from "@vercel/speed-insights/react"
 
 import './App.css';
+import Hobbies from './components/Hobbies';
 
 function App() {
 
@@ -94,6 +95,9 @@ function App() {
       <Contact
         darkMode={darkMode}
 
+      />
+      <Hobbies
+        darkMode={darkMode}
       />
       <Footer
         darkMode={darkMode}
