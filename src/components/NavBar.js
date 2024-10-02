@@ -29,6 +29,7 @@ export default function NavBar(props){
         window.addEventListener("scroll", handleChange)
 
         return () => window.removeEventListener("scroll", handleChange)
+
     },[prevScroll])
 
     const nagigatorLink = document.getElementById("navigator--link")
@@ -56,12 +57,23 @@ export default function NavBar(props){
             width <= 600 ? 
             (
                 <div>
-                    <img 
+                    {!menuOpen ? (<img 
                         src={darkMode ? "/light-hamburger.svg" : "/dark-hamburger.svg" } 
                         className="hamburgerIcon" 
                         onClick={toggleMenu} 
                         alt="hamburger menu"
+                    />):
+                    (
+                        <img 
+                        src={darkMode ? "/light-close.svg" : "/dark-close.svg" } 
+                        className="hamburgerIcon" 
+                        onClick={toggleMenu} 
+                        alt="hamburger menu"
                     />
+                    )
+                    
+                
+                }
                     {menuOpen && (
                         <div className={darkMode ? "hamburger-links dark" : "hamburger-links"} id="navigator--link">
                             <a href="#skill" className="navigatorAnchor">Skills</a>
@@ -85,6 +97,7 @@ export default function NavBar(props){
                 <img src={darkMode ? "/dark-icon.png" : "/light-icon.png"} className="toggleModeIcon" onClick={props.toggleDarkMode} alt="mode toggle" />
             </div>)
         }
+
             
         </nav>
         
