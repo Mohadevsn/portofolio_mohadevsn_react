@@ -32,10 +32,10 @@ export default function NavBar(props){
 
     },[prevScroll])
 
+    
+
     const nagigatorLink = document.getElementById("navigator--link")
     console.log(nagigatorLink)
-
-
 
 
     const toggleMenu = () => {
@@ -71,8 +71,6 @@ export default function NavBar(props){
                         alt="hamburger menu"
                     />
                     )
-                    
-                
                 }
                     {menuOpen && (
                         <div className={darkMode ? "hamburger-links dark" : "hamburger-links"} id="navigator--link">
@@ -86,7 +84,6 @@ export default function NavBar(props){
                     )}
                 </div>
             ): 
-            
             (
                 <div className={darkMode ? "navigator--link dark" : "navigator--link"}>
                 <a href="#skill">Skills </a>
@@ -97,10 +94,6 @@ export default function NavBar(props){
                 <img src={darkMode ? "/dark-icon.png" : "/light-icon.png"} className="toggleModeIcon" onClick={props.toggleDarkMode} alt="mode toggle" />
             </div>)
         }
-
-            
         </nav>
-        
-        
     );
 }
