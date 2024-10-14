@@ -16,9 +16,9 @@ export default function About(props){
                 I enjoy tackling complex problems and continuously expanding my knowledge in the ever-evolving world of technology.
                 </p>
             </div>
-            {/* <div className="profile--image">
+            <div className="profile--image">
                 <img src="/mohamed_profile.jpeg" alt="profile" className="profile--me"/>
-            </div> */}
+            </div>
         </main>
     )
 }
