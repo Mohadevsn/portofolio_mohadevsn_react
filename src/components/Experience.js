@@ -24,7 +24,8 @@ export default function Experience(props){
                             <div className="technologie--container">
                                 {exp.technologie.map((tech, techIndex)=>{
                                     return (
-                                        <p key={techIndex} className={props.darkMode ? "technologie dark": "technologie"}>{tech}</p>
+                                        // <p key={techIndex} className={props.darkMode ? "technologie dark": "technologie"}>{tech}</p>
+                                        <img key={techIndex} src={tech} alt="tech used"/>
                                 )
                                 })}
                             </div>

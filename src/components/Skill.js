@@ -18,7 +18,7 @@ export default function Skill(props){
                                 {skill.tools.map((tool, toolIndex) => {
                                     return (
                                         // <p key={toolIndex} className={props.darkMode? "tools dark" : "tools"}> {tool} </p>
-                                        <img src={tool}/>
+                                        <img key={toolIndex} src={tool} alt="skill icon"/>
                                     )
                                 })}
                         </div>    
