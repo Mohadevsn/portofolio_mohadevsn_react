@@ -6,7 +6,7 @@ export default function About(props){
         <main className={props.darkMode ? "presentation--container dark" : "presentation--container"} id="about">
             <div>
                 <p className="presention--title">
-                    Hello I'm Mohamed WADE <br/> <span className="roleTitle">Computer Science Student & Tech Enthusiast </span>
+                    Hello I'm Mohamed WADE <br/> <span className="roleTitle">Junior Software and Information Systems Developer & Tech Enthusiast </span>
                 </p>
                 <p className="presentation--description">
                 I am a passionate Computer Science Student at <a href="https://esp.sn/" target="blank" className="school--link"><br/>

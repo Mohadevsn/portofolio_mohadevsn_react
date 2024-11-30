@@ -4,54 +4,36 @@
       "name": "Front End",
       "tools": 
       [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React",
-        "Astro Js",
-        "Flutter"
+      
+        "https://img.icons8.com/?size=100&id=108784&format=png&color=000000",
+        "https://img.icons8.com/?size=100&id=bzf0DqjXFHIW&format=png&color=000000",
+        "https://img.icons8.com/?size=100&id=lckHFUP7nJhG&format=png&color=000000",
+        "https://img.icons8.com/?size=100&id=pCvIfmctRaY8&format=png&color=000000"
       ]
     },
     {
       "name": "BackEnd",
       "tools":[
-        "PHP",
-        "Laravel",
-        "Spring Boot"
+        "https://img.icons8.com/?size=100&id=anECpXcEIboQ&format=png&color=000000",
+        "https://img.icons8.com/?size=100&id=lRjcvhvtR81o&format=png&color=000000",
+        "https://img.icons8.com/?size=100&id=90519&format=png&color=000000",
+        "https://img.icons8.com/?size=100&id=13441&format=png&color=000000"
       ]
     },
     {
       "name":"Software Engineering ",
       "tools":[
-        "Python 🐍",
-        "C",
-        "Java ♨️",
-        "Dart"
-      ]
-    },
-    {
-      "name": "Operating Systems",
-      "tools":[
-        "MacOs ",
-        "Linux 🐧",
-        "Windows 🪟"
-      ]
-    },
-    {
-      "name": "Network Management",
-      "tools":[
-        "Apache 2",
-        "Cisco",
-        "MySql",
-        "SSH",
-        "FTP"
+        "https://img.icons8.com/?size=100&id=40670&format=png&color=000000",
+        "https://img.icons8.com/?size=100&id=13679&format=png&color=000000",
+        "https://img.icons8.com/?size=100&id=P2AnGyiJxMpp&format=png&color=000000"
       ]
     },
     {
       "name": "Colaboration Tools",
       "tools":[
-        "Git",
-        "Figma"
+        "https://img.icons8.com/?size=100&id=20906&format=png&color=000000",
+        "https://img.icons8.com/?size=100&id=52539&format=png&color=000000",
+        "https://img.icons8.com/?size=100&id=zfHRZ6i1Wg0U&format=png&color=000000"
       ]
     }
   ]

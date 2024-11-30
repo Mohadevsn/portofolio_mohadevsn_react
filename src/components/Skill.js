@@ -17,7 +17,8 @@ export default function Skill(props){
                         <div className="tools--container dark">
                                 {skill.tools.map((tool, toolIndex) => {
                                     return (
-                                        <p key={toolIndex} className={props.darkMode? "tools dark" : "tools"}> {tool} </p>
+                                        // <p key={toolIndex} className={props.darkMode? "tools dark" : "tools"}> {tool} </p>
+                                        <img src={tool}/>
                                     )
                                 })}
                         </div>    
