@@ -1,6 +1,12 @@
 {
   "Educations": [
     {
+      "name": "Genie Logiciel et Systeme d'information - Polytechnic School of Dakar ESP",
+      "periode": "Oct 2024 - curently",
+      "description":"Algorithmic and Programming Architecture - System and Networks - Software Engineering - Expression and Communication - Organisation Management - Professional project"
+    }
+    ,
+    {
       "name": "DST Informatique - Polytechnic School of Dakar ESP",
       "periode": "Oct 2022 - July 2024",
       "description": "Algorithmic and Programming Architecture - System and Networks - Software Engineering Tools and Models - Mathematics - Economics - Expression and Communication - Organisation Management - English"
