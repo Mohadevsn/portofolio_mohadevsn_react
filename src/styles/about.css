@@ -1,11 +1,10 @@
-
 /* presention styles */
 .presentation--container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
-    margin-top: 8%;
+    margin-top: 12%;
   }
   
   .roleTitle{
@@ -88,3 +87,103 @@
   }
 
   /* dark presentation styles */
+
+  /* Modern About Card Styles */
+  .about-card {
+    background: #fff;
+    color: #18191a;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    padding: 2.5rem 2rem;
+    margin: 2.5rem auto;
+    max-width: 900px;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  .about-card.dark {
+    background: #18191a;
+    color: #fff;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5rem;
+  }
+
+  .about-text {
+    flex: 2;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+
+  .about-role {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #007bff;
+    display: block;
+    margin-top: 0.5rem;
+  }
+
+  .about-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-link {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .about-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+
+  .about-highlight {
+    color: #e63946;
+    font-weight: 600;
+  }
+
+  .about-image-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    border: 4px solid #fff;
+    transition: border 0.3s;
+  }
+
+  .about-card.dark .about-image {
+    border: 4px solid #222;
+  }
+
+  @media (max-width: 700px) {
+    .about-content {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .about-image {
+      width: 120px;
+      height: 120px;
+    }
+    .about-title {
+      font-size: 1.5rem;
+    }
+  }

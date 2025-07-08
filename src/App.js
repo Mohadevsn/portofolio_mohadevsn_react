@@ -10,6 +10,7 @@ import { SpeedInsights } from "@vercel/speed-insights/react"
 
 import './App.css';
 import Hobbies from './components/Hobbies';
+import './styles/common.css'
 
 function App() {
 

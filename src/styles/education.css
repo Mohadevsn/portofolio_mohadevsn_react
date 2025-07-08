@@ -1,24 +1,59 @@
-
-
 /* education styles */
 .education {
     display: flex;
-    padding: 24px;
     flex-direction: column;
-    text-align: justify;
+    gap: 2.2rem;
+    padding: 2.5rem 1.5rem;
+    background: transparent;
+    border-radius: 18px;
   }
   
-  .education .title {
-    font-size: 20px;
-    background-color: #e8ebed;
+  .title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #18191a;
+    letter-spacing: 0.01em;
   }
   
   .element {
-    width: 50%;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    padding: 1.5rem 1.2rem;
+    margin-bottom: 0.5rem;
+    transition: box-shadow 0.2s, background 0.3s;
+    width: 100%;
+    max-width: 700px;
   }
   
-  .education .description {
-    font-size: 14px;
+  .education.dark .element {
+    background: #23272f;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+  }
+  
+  .subtile {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+    color: #007bff;
+  }
+  
+  .periode {
+    font-size: 0.98rem;
+    color: #888;
+    margin-bottom: 0.7rem;
+    font-family: "Playwrite DE Grund", cursive;
+  }
+  
+  .description {
+    font-size: 1.08rem;
+    color: #222;
+    line-height: 1.7;
+  }
+  
+  .education.dark .description {
+    color: #e0e0e0;
   }
   
   .education .technologie {
@@ -28,21 +63,19 @@
     background-color: #e8ebed;
   }
   
-  .education .periode {
-    font-family: "Playwrite DE Grund", cursive;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 12px;
-  }
-  
   /* Responsive adjustments for education */
-  @media (max-width: 600px) {
-    .element {
-      width: 100%; /* Full width on mobile */
+  @media (max-width: 700px) {
+    .education {
+      padding: 1.2rem 0.5rem;
+      gap: 1.2rem;
     }
   
-    .education .title {
-      font-size: 18px; /* Smaller title on mobile */
+    .title {
+      font-size: 1.3rem;
+    }
+  
+    .element {
+      padding: 1rem 0.5rem;
     }
   }
 /* education styles */
@@ -52,9 +85,9 @@
   background-color: black;
 }
 
-.education .title.dark {
-  font-size: 20px;
-  background-color: #2a2a2a;
+.title.dark {
+  color: #fff;
+  background: transparent;
 }
 
 /* education dark style */

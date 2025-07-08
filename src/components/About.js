@@ -1,24 +1,40 @@
 import React from "react";
-import '../styles/about.css'
+import "../styles/about.css";
 
-export default function About(props){
-    return (
-        <main className={props.darkMode ? "presentation--container dark" : "presentation--container"} id="about">
-            <div>
-                <p className="presention--title">
-                    Hello I'm Mohamed WADE <br/> <span className="roleTitle">Junior Software and Information Systems Developer & Tech Enthusiast </span>
-                </p>
-                <p className="presentation--description">
-                I am a passionate Computer Science Student at <a href="https://esp.sn/" target="blank" className="school--link"><br/>
-                <b> Polytechnic School of Dakar ESP</b></a> <b>📍 Senegal</b> 🇸🇳 with a <span className="red">deep love</span> for all things tech. <br/>
-                My journey with computers began in childhood, and I have since explored various areas of computer science. <br/>
-                I specialize in both <b>web development 🌐</b>, <b>System and Networks 🛜</b>and general <b>software development 👨🏿‍💻</b>.
-                I enjoy tackling complex problems and continuously expanding my knowledge in the ever-evolving world of technology.
-                </p>
-            </div>
-            <div className="profile--image">
-                <img src="/mohamed_profile.jpeg" alt="profile" className="profile--me"/>
-            </div>
-        </main>
-    )
+export default function About(props) {
+  return (
+    <section
+      className={props.darkMode ? "about-card dark" : "about-card"}
+      id="about"
+    >
+      <div className="about-content">
+        <div className="about-text">
+          <h1 className="about-title">
+            Hello, I'm Mohamed WADE <br />
+            <span className="about-role">
+            CS Student & Software Developer 
+            </span>
+          </h1>
+          <p className="about-description">
+            I’m a Computer Science student with a strong interest in full-stack
+            development, clean architecture, and building real-world solutions
+            that solve real problems. <br/>
+            Beyond school, I’m passionate about Linux
+            systems, networking, and homelab projects — always exploring how to
+            make systems more efficient, scalable, and secure. <br/>
+            I love
+            collaborating on projects where I can write maintainable code, learn
+            from feedback, and ship features that matter. 
+          </p>
+        </div>
+        <div className="about-image-wrapper">
+          <img
+            src="/mohamed_profile.png"
+            alt="profile"
+            className="about-image"
+          />
+        </div>
+      </div>
+    </section>
+  );
 }

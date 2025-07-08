@@ -1,161 +1,182 @@
-
-
-  /* light navbar styles */
-  .navigator {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    box-shadow: #333 inset;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #e8ebed;
-    font-family: "Playwrite DE Grund", cursive;
-    font-optical-sizing: auto;
-    font-style: normal;
-    box-shadow: 0px 6px 5px 0px rgba(161,161,161,1);
-    height: 40px;
-    transition: 0.3s ease;
-  }
-
-  .hidden {
-    top: -100px;  /* Moves the navbar up to hide it */
-  }
-
-  .visible {
-    top: 0;  /* Keeps the navbar in view */
-  }
-
-  .name{
-    justify-items: center;
-  }
-  
-  .navigator--link {
-    display: flex;
-    flex-direction: row;
-    gap: 20px; /* Adds space between links */
-    margin-right: 5%;
-  }
-  
-  .navigator--link a {
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
-  }
-  
-  .navigator--link a:hover {
-    color: #007bff;
-  }
-  
-  .mohadevsnLogoLarge{
-    width: 180px;
-  }
-
-  .toggleModeIcon{
-    width: 30px;
-  }
-  .toggleModeIcon:hover{
-    cursor: pointer;
-  }
-
-  .hamburgerIcon {
-    width: 30px;
-    cursor: pointer;
-    padding: 35px;
-    transition: 0.3s ease;
+/* Modern Glassmorphism Navbar Styles */
+.navigator {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7.5px;
+  background: rgba(232, 235, 237, 0.85);
+  backdrop-filter: blur(12px);
+  font-family: "Playwrite DE Grund", cursive;
+  /* border-radius: 0 0 22px 22px; */
+  box-shadow: 0 6px 24px 0 rgba(161,161,161,0.13);
+  height: 64px;
+  transition: background 0.3s, box-shadow 0.3s, color 0.3s;
 }
 
-.hamburger-links {
-    display: flex;
-    flex-direction: column;
-    background-color: #e8ebed;
-    position: absolute;
-    top: 40px;
-    right: 0;
-    width: 40%;
-    padding: 10px;
-    border-radius: 10px;
-    transition: 0.3s ease-in;
+.navigator.dark {
+  background: rgba(34, 34, 34, 0.85);
+  box-shadow: 0 6px 24px 0 rgba(55, 54, 54, 0.18);
 }
 
-.hamburger-links a {
-    text-decoration: none;
-    color: #333;
-    padding: 10px 0;
-    border-bottom: 1px solid #ccc;
+.visible {
+  top: 0;
+  opacity: 1;
+  pointer-events: auto;
+  transition: top 0.3s, opacity 0.3s;
 }
 
-.hamburger-links.dark {
-    background-color: #2a2a2a;
+.hidden {
+  top: -100px;
+  opacity: 0;
+  pointer-events: none;
+  transition: top 0.3s, opacity 0.3s;
 }
 
-.hamburger-links.dark a {
-    color: white;
+.name {
+  display: flex;
+  align-items: center;
 }
 
-.hamburger-links a:hover {
-    color: #007bff;
+.mohadevsnLogoLarge, .mohadevsnLogoSmall {
+  width: auto;
+  height: 44px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  background: transparent;
 }
-  
-  /* Responsive adjustments for navbar */
-  @media (max-width: 600px) {
 
-    .navigator{
-      height: 20px;
-    }
-  
-    .navigator--link{
-    margin-right: 8%;
-    }
-
-    .mohadevsnLogoSmall{
-      width: 40px;
-    }
-      
-    .navigator--link a {
-      text-decoration: none;
-      color: #333;
-      font-size: 10px;
-      gap: 5px;
-      padding-right: 2.5px;
-    }
-  
-    .toggleModeIcon{
-      width: 30px;
-    }
-    /* Hide default links and use hamburger */
-    .navigator--link {
-      display: none;
-  }
-
-  .hamburger-menu {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      margin-right: 10px;
-  }
-  
-  }
-/* light navbar styles */
-
-/* dark navbar styles */
-
-.navigator.dark{
-  background-color: #2a2a2a;
-  box-shadow: 0px 6px 5px 0px rgb(55, 54, 54);
-  transition: 0.3s ease;
+.navigator--link {
+  display: flex;
+  flex-direction: row;
+  gap: 2.2rem;
+  align-items: center;
+  margin-right: 2.5rem;
 }
-.navigator--link.dark a {
+
+.navigator--link a {
   text-decoration: none;
-  color: white;
+  color: #222;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.navigator--link a:hover {
+  background: #e3e9f7;
+  color: #007bff;
+}
+
+.navigator--link.dark a {
+  color: #fff;
 }
 
 .navigator--link.dark a:hover {
-    color: #007bff;
+  background: #23272f;
+  color: #90cdf4;
 }
 
+.toggleModeIcon {
+  width: 32px;
+  height: 32px;
+  margin-left: 1.2rem;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  transition: box-shadow 0.2s, background 0.2s;
+  cursor: pointer;
+}
+.toggleModeIcon:hover {
+  background: #e3e9f7;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.13);
+}
+
+/* Hamburger Menu */
+.hamburgerIcon {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  padding: 0.7rem;
+  border-radius: 50%;
+  background: transparent;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.hamburgerIcon:hover {
+  background: #e3e9f7;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.13);
+}
+
+.hamburger-links {
+  display: flex;
+  flex-direction: column;
+  background: rgba(232, 235, 237, 0.97);
+  position: absolute;
+  top: 64px;
+  right: 2.5rem;
+  width: 220px;
+  padding: 1.2rem 1rem 1rem 1rem;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  transition: background 0.3s, box-shadow 0.3s;
+  gap: 1rem;
+  z-index: 200;
+}
+.hamburger-links a {
+  text-decoration: none;
+  color: #222;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+.hamburger-links a:hover {
+  background: #e3e9f7;
+  color: #007bff;
+}
+.hamburger-links.dark {
+  background: rgba(34, 34, 34, 0.97);
+}
+.hamburger-links.dark a {
+  color: #fff;
+}
+.hamburger-links.dark a:hover {
+  background: #23272f;
+  color: #90cdf4;
+}
+.hamburger-links .toggleModeIcon {
+  margin: 0.5rem auto 0 auto;
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .navigator {
+    padding: 0.7rem 1rem;
+    height: 48px;
+  }
+  .mohadevsnLogoLarge, .mohadevsnLogoSmall {
+    height: 32px;
+  }
+  .navigator--link {
+    gap: 1.1rem;
+    margin-right: 1rem;
+  }
+  .hamburger-links {
+    right: 1rem;
+    width: 80vw;
+    min-width: 180px;
+    padding: 1rem 0.7rem 0.7rem 0.7rem;
+  }
+}
+
+/* light navbar styles */
 
 /* dark navbar styles */

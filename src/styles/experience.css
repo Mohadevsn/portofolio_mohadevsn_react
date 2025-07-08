@@ -1,4 +1,107 @@
+/* Modern Experience Card Styles */
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  padding: 2.5rem 1.5rem;
+  background: transparent;
+  border-radius: 18px;
+}
 
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #18191a;
+  letter-spacing: 0.01em;
+}
+.title.dark {
+  color: #fff;
+  background: transparent;
+}
+
+.element {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 1.5rem 1.2rem;
+  margin-bottom: 0.5rem;
+  transition: box-shadow 0.2s, background 0.3s;
+  width: 100%;
+  max-width: 700px;
+}
+.experience.dark .element {
+  background: #23272f;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+}
+
+.subtile {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+  color: #007bff;
+}
+.periode {
+  font-size: 0.98rem;
+  color: #888;
+  margin-bottom: 0.7rem;
+  font-family: "Playwrite DE Grund", cursive;
+}
+.description {
+  font-size: 1.08rem;
+  color: #222;
+  line-height: 1.7;
+}
+.experience.dark .description {
+  color: #e0e0e0;
+}
+.technologie--container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(48px, 1fr));
+  gap: 1.2rem;
+  margin-top: 0.7rem;
+}
+.technologie--container img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #f5f6fa;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+  padding: 0.3rem;
+  transition: transform 0.18s, box-shadow 0.18s;
+  cursor: pointer;
+}
+.technologie--container img:hover {
+  transform: scale(1.12) rotate(-4deg);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+  background: #e3e9f7;
+}
+.experience.dark .technologie--container img {
+  background: #23272f;
+}
+.experience.dark .technologie--container img:hover {
+  background: #2a2a2a;
+}
+@media (max-width: 700px) {
+  .experience {
+    padding: 1.2rem 0.5rem;
+    gap: 1.2rem;
+  }
+  .title {
+    font-size: 1.3rem;
+  }
+  .element {
+    padding: 1rem 0.5rem;
+  }
+  .technologie--container {
+    gap: 0.7rem;
+  }
+  .technologie--container img {
+    width: 28px;
+    height: 28px;
+  }
+}
 
 /* experience styles */
 .experience {
