@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/Contact.css";
+import { contact } from "../data/contact";
 
 export default function Contact() {
   return (
@@ -15,17 +16,17 @@ export default function Contact() {
         </p>
 
         <div className="contact-links">
-          <a href="mailto:mohawade23@gmail.com" className="btn btn-primary contact-btn">
+          <a href={`mailto:${contact.email}`} className="btn btn-primary contact-btn">
             M'envoyer un e-mail
           </a>
         </div>
 
         <div className="contact-socials">
-          <a href="https://github.com/Mohadevsn" target="_blank" rel="noreferrer" className="social-link">
+          <a href={`${contact.github}`} target="_blank" rel="noreferrer" className="social-link">
             GitHub
           </a>
           <span className="divider">/</span>
-          <a href="https://www.linkedin.com/in/mohamedwade/" target="_blank" rel="noreferrer" className="social-link">
+          <a href={`${contact.linkedin}`} target="_blank" rel="noreferrer" className="social-link">
             LinkedIn
           </a>
         </div>
