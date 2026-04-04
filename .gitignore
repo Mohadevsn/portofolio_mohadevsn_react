@@ -11,6 +11,9 @@
 # production
 /build
 
+# md file
+agent.md
+
 # misc
 .DS_Store
 .env.local

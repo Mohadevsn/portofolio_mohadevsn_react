@@ -1,178 +1,112 @@
-/* Modern Experience Card Styles */
-.experience {
+.timeline {
   display: flex;
   flex-direction: column;
-  gap: 2.2rem;
-  padding: 2.5rem 1.5rem;
-  background: transparent;
-  border-radius: 18px;
+  gap: 0;
 }
 
-.title {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-  color: #18191a;
-  letter-spacing: 0.01em;
-}
-.title.dark {
-  color: #fff;
-  background: transparent;
-}
-
-.element {
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-  padding: 1.5rem 1.2rem;
-  margin-bottom: 0.5rem;
-  transition: box-shadow 0.2s, background 0.3s;
-  width: 100%;
-  max-width: 700px;
-}
-.experience.dark .element {
-  background: #23272f;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.13);
-}
-
-.subtile {
-  font-size: 1.15rem;
-  font-weight: 600;
-  margin-bottom: 0.7rem;
-  color: #007bff;
-}
-.periode {
-  font-size: 0.98rem;
-  color: #888;
-  margin-bottom: 0.7rem;
-  font-family: "Playwrite DE Grund", cursive;
-}
-.description {
-  font-size: 1.08rem;
-  color: #222;
-  line-height: 1.7;
-}
-.experience.dark .description {
-  color: #e0e0e0;
-}
-.technologie--container {
+.timeline-item {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(48px, 1fr));
-  gap: 1.2rem;
-  margin-top: 0.7rem;
-}
-.technologie--container img {
-  width: 36px;
-  height: 36px;
-  object-fit: contain;
-  border-radius: 10px;
-  background: #f5f6fa;
-  box-shadow: 0 1px 6px rgba(0,0,0,0.07);
-  padding: 0.3rem;
-  transition: transform 0.18s, box-shadow 0.18s;
-  cursor: pointer;
-}
-.technologie--container img:hover {
-  transform: scale(1.12) rotate(-4deg);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.13);
-  background: #e3e9f7;
-}
-.experience.dark .technologie--container img {
-  background: #23272f;
-}
-.experience.dark .technologie--container img:hover {
-  background: #2a2a2a;
-}
-@media (max-width: 700px) {
-  .experience {
-    padding: 1.2rem 0.5rem;
-    gap: 1.2rem;
-  }
-  .title {
-    font-size: 1.3rem;
-  }
-  .element {
-    padding: 1rem 0.5rem;
-  }
-  .technologie--container {
-    gap: 0.7rem;
-  }
-  .technologie--container img {
-    width: 28px;
-    height: 28px;
-  }
+  grid-template-columns: 140px 40px 1fr;
+  min-height: 120px;
 }
 
-/* experience styles */
-.experience {
-    display: flex;
-    padding: 24px;
-    flex-direction: column;
-    text-align: justify;
-  }
-  
-  .experience .title {
-    font-size: 20px;
-    background-color: #e8ebed;
-  }
-  
-  .experience .description {
-    font-size: 14px;
-  }
-  
-  .experience .technologie {
-    border: 0.5px solid #7d8080be;
-    width: 100%;
-    text-align: center;
-    border-radius: 30px;
-    background-color: #e8ebed;
-  }
-  
-  .technologie--container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust based on your preference */
-    gap: 10px; /* Space between grid items */
-  }
-  
-  .experience .periode {
-    font-family: "Playwrite DE Grund", cursive;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 12px;
-  }
-  
-  /* Responsive adjustments for experience */
-  @media (max-width: 600px) {
-    .experience .title {
-      font-size: 18px; /* Smaller title on mobile */
-    }
-  
-    .technologie--container {
-      display: grid;
-      grid-template-rows: 1fr 1fr; /* Stack technologies by grid */
-    }
-  }
+.timeline-date {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  padding-top: 4px;
+  text-align: right;
+  padding-right: 1rem;
+}
 
-  /* experience styles */
+.timeline-marker {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
 
-  /* experience dark styles */
+.timeline-marker .dot {
+  width: 12px;
+  height: 12px;
+  background-color: var(--bg-surface);
+  border: 2px solid var(--accent);
+  border-radius: 50%;
+  margin-top: 5px;
+  z-index: 2;
+}
 
-  /* Skills dark style */
-  .experience.dark {
-    background-color: black;
+.timeline-marker .line {
+  position: absolute;
+  top: 17px;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  background-color: var(--border);
+  z-index: 1;
+}
+
+.timeline-content {
+  padding-bottom: 3rem;
+  padding-left: 1rem;
+}
+
+.timeline-title {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.timeline-title .text-accent {
+  color: var(--accent);
+}
+
+.timeline-bullets {
+  list-style-type: none;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.timeline-bullets li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.timeline-bullets li::before {
+  content: '>';
+  position: absolute;
+  left: 0;
+  color: var(--text-muted);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.8rem;
+  top: 2px;
+}
+
+@media (max-width: 600px) {
+  .timeline-item {
+    grid-template-columns: 30px 1fr;
   }
-
-  .experience .title.dark {
-    font-size: 20px;
-    background-color: #2a2a2a;
+  
+  .timeline-date {
+    grid-column: 1 / -1;
+    text-align: left;
+    padding-right: 0;
+    padding-bottom: 0.5rem;
+    padding-top: 0;
   }
-  .experience .technologie.dark {
-    border: 0.5px solid #7d8080be;
-    width: 100%;
-    text-align: center;
-    border-radius: 30px;
-    background-color: #2a2a2a;
+  
+  .timeline-marker {
+    grid-area: 2 / 1 / 3 / 2;
   }
-
-  /* Skills dark style */
-  /* experience dark styles */
+  
+  .timeline-content {
+    grid-area: 2 / 2 / 3 / 3;
+    padding-left: 0.5rem;
+  }
+  
+  .timeline-marker .dot {
+    margin-top: 6px;
+  }
+}

@@ -1,38 +1,23 @@
 import React from "react";
-import "../styles/about.css";
+import "../styles/About.css";
 
-export default function About(props) {
+export default function About() {
   return (
-    <section
-      className={props.darkMode ? "about-card dark" : "about-card"}
-      id="about"
-    >
+    <section id="about" className="about-section">
+      <h2 className="section-title">À propos</h2>
+
       <div className="about-content">
-        <div className="about-text">
-          <h1 className="about-title">
-            Hello, I'm Mohamed WADE <br />
-            <span className="about-role">
-            CS Student & Software Developer 
-            </span>
-          </h1>
-          <p className="about-description">
-            I’m a Computer Science student with a strong interest in full-stack
-            development, clean architecture, and building real-world solutions
-            that solve real problems. <br/>
-            Beyond school, I’m passionate about Linux
-            systems, networking, and homelab projects — always exploring how to
-            make systems more efficient, scalable, and secure. <br/>
-            I love
-            collaborating on projects where I can write maintainable code, learn
-            from feedback, and ship features that matter. 
-          </p>
-        </div>
-        <div className="about-image-wrapper">
-          <img
-            src="/mohamed_profile.png"
-            alt="profile"
-            className="about-image"
-          />
+        <p>
+          Développeur full-stack passionné, je suis actuellement en Master Génie Logiciel à l'ESP Dakar.
+          J'aime concevoir des architectures backend robustes et modernes, tout en créant des interfaces utilisateur élégantes et performantes.
+        </p>
+        <p>
+          J'ai eu l'opportunité de travailler sur des applications variées, allant des microservices en NestJS aux applications mobiles React Native.
+        </p>
+
+        <div className="availability-badge">
+          <span className="dot"></span>
+          <span>Disponible pour missions / CDI</span>
         </div>
       </div>
     </section>

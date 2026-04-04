@@ -1,25 +1,22 @@
 import React from "react";
-import Educations from "../data/education.json"
-import '../styles/education.css'
+import "../styles/Education.css";
+import { educations } from "../data/education";
 
-export default function Education(props){
+export default function Education() {
 
-    const educationData = Educations.Educations 
-    
-    return (
-        <main className={props.darkMode ? "section dark": "section"} id="education">
-            <h1 className={props.darkMode ?"title dark": "title"}>🎓 Education</h1>
-             {educationData.map((educ, eduKey)=>{
-                return (
-                    <div key={eduKey} className="card">
-                        <p className="subtitle">- <b>{educ.name}</b></p>
-                        <p className="periode">{educ.periode}</p>
-                        <div className="description">
-                            <p>{educ.description}</p>
-                        </div>
-                    </div>
-                )
-             })}
-        </main>
-    )
+  return (
+    <section id="education" className="education-section">
+      <h2 className="section-title">Formation</h2>
+
+      <div className="education-grid">
+        {educations.map((edu, idx) => (
+          <div key={idx} className="education-card">
+            <div className="education-year">{edu.year}</div>
+            <h3 className="education-degree">{edu.degree}</h3>
+            <p className="education-school">{edu.school}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 }

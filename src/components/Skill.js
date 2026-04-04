@@ -1,26 +1,31 @@
 import React from "react";
-import skillsData from "../data/skills.json"
-import '../styles/skill.css'
+import "../styles/Skill.css";
+import { skillCategories } from "../data/skills";
 
-export default function Skill(props){
-    const data = skillsData.Skills
+export default function Skill() {
+
+
     return (
-        <main className={props.darkMode ?"section dark" : "section"} id="skill">
-            <h1 className={props.darkMode? "title dark" : "title"}>🥷🏾 Skills</h1>
-         {data.map((skill, skillKey)=>{
-            return (
-            <div key={skillKey} className="card">
-                <p className="subtitle">- <b>{skill.name}</b></p>
-                <div className="tools--container dark">
-                        {skill.tools.map((tool, toolIndex) => {
-                            return (
-                                <img key={toolIndex} src={tool} alt="skill icon"/>
-                            )
-                        })}
-                </div>    
+        <section id="skills" className="skills-section">
+            <h2 className="section-title">Compétences</h2>
+
+            <div className="skills-categories">
+                {skillCategories.map((category, idx) => (
+                    <div key={idx} className="skill-category">
+                        <h3 className="skill-category-title">{category.title}</h3>
+                        <div className="skill-tags">
+                            {category.skills.map((skill, sIdx) => (
+                                <span
+                                    key={sIdx}
+                                    className={`skill-tag ${skill.accent ? 'accent' : ''}`}
+                                >
+                                    {skill.name}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
+                ))}
             </div>
-            )
-         })}
-        </main>
-    )
+        </section>
+    );
 }
