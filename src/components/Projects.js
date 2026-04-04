@@ -1,5 +1,5 @@
 import React from "react";
-import projectsData from "../data/projects.json";
+import { projects } from "../data/projects";
 import "../styles/Projects.css";
 
 export default function Projects() {
@@ -8,7 +8,7 @@ export default function Projects() {
       <h2 className="section-title">Projets</h2>
 
       <div className="projects-grid">
-        {projectsData.map((project, idx) => (
+        {projects.map((project, idx) => (
           <div key={idx} className="project-card">
             <div className="project-content">
               <h3 className="project-title">{project.title}</h3>

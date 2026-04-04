@@ -1,4 +1,4 @@
-[
+export const projects = [
   {
     "title": "Kopar Express Mobile App",
     "description": "Migration d'une application existante Angular Ionic vers React Native (Expo). Amélioration des performances de rendu et refonte de l'interface utilisateur pour intégrer un design fluide et adapté aux spécificités mobiles de chaque plateforme OS.",

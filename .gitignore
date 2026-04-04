@@ -14,6 +14,9 @@
 # md file
 agent.md
 
+# bash script
+*.sh
+
 # misc
 .DS_Store
 .env.local

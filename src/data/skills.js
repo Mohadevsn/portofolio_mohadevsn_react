@@ -29,7 +29,7 @@ export const skillCategories = [
         name: "NestJS", accent: true
       },
       {
-        name: "Spring Boot", accent: false
+        name: "Spring Boot", accent: true
       },
       {
         name: "React", accent: true
