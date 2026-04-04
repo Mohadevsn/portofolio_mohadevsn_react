@@ -1,0 +1,67 @@
+.contact-content {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.contact-hook {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.5px;
+}
+
+.contact-text {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+}
+
+.contact-socials {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-family: 'IBM Plex Mono', monospace;
+  color: var(--text-secondary);
+}
+
+.social-link {
+  color: var(--text-secondary);
+  position: relative;
+}
+
+.social-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--accent);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.social-link:hover {
+  color: var(--accent);
+}
+
+.social-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.divider {
+  color: var(--border);
+}

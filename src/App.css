@@ -1,14 +1,60 @@
-body{
-  margin: 0;
-  padding: 0;
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
 }
 
-.mainDiv{
-  color: black;
-  background-color: white;
+.main-content {
+  margin-left: 300px; /* Same as sidebar width */
+  flex-grow: 1;
+  padding: 0 4rem;
+  display: flex;
+  justify-content: center;
 }
 
-.mainDiv.dark{
-  color: white;
-  background-color: black;
+.content-wrapper {
+  max-width: 800px;
+  width: 100%;
+}
+
+section {
+  padding: 6rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+section:last-of-type {
+  border-bottom: none;
+}
+
+.section-title {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+}
+
+.section-title::before {
+  content: '>';
+  color: var(--accent);
+  margin-right: 0.75rem;
+}
+
+@media (max-width: 900px) {
+  .app-container {
+    flex-direction: column;
+  }
+  
+  .main-content {
+    margin-left: 0;
+    padding: 70px 2rem 0; /* Adding 70px top-padding to clear the mobile topbar */
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 70px 1.5rem 0;
+  }
 }
