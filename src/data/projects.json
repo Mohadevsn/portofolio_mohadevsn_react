@@ -1,0 +1,41 @@
+[
+  {
+    "title": "Kopar Express Mobile App",
+    "description": "Migration d'une application existante Angular Ionic vers React Native (Expo). Amélioration des performances de rendu et refonte de l'interface utilisateur pour intégrer un design fluide et adapté aux spécificités mobiles de chaque plateforme OS.",
+    "technologies": [
+      "React Native",
+      "Expo",
+      "Zustand",
+      "NativeWind"
+    ],
+    "gitAvailable": false,
+    "githubLink": "",
+    "liveLink": ""
+  },
+  {
+    "title": "Yas Santé",
+    "description": "Outil web de gestion de dossiers médicaux développé avec des APIs hautement sécurisées, une authentification forte par JWT, et un contrôle granulaire basé sur les rôles (RBAC).",
+    "technologies": [
+      "NestJS",
+      "React",
+      "PostgreSQL",
+      "TailwindCSS"
+    ],
+    "gitAvailable": false,
+    "githubLink": "https://github.com/Mohadevsn",
+    "liveLink": ""
+  },
+  {
+    "title": "Portail Interne Free Sénégal",
+    "description": "Application pour la gestion interne, offrant un CRUD complet, une intégration multi-base de données, et permettant de générer des reportings automatiques sur les performances internes.",
+    "technologies": [
+      "Laravel",
+      "Blade",
+      "MySQL",
+      "PHP"
+    ],
+    "gitAvailable": false,
+    "githubLink": "https://github.com/Mohadevsn/portail-interne",
+    "liveLink": ""
+  }
+]
